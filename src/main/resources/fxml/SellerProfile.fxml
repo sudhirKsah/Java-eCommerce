@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="450.0" minWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.ecommerce.controllers.SellerProfileController">
+   <content>
+      <AnchorPane minHeight="450.0" minWidth="600.0">
+         <children>
+            <Label layoutX="231.0" layoutY="21.0" text="My Details">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox layoutX="40.0" layoutY="67.0">
+               <children>
+                  <VBox spacing="15.0">
+                     <children>
+                        <Label text="Name :">
+                           <font>
+                              <Font name="Arial" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="E-mail :">
+                           <font>
+                              <Font name="Arial" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Phone Number :">
+                           <font>
+                              <Font name="Arial" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Address :">
+                           <font>
+                              <Font name="Arial" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox spacing="10.0">
+                     <children>
+                        <Label fx:id="sellerNameLabel" text="Seller Name">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sellerEmailLabel" text="Seller email">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sellerPhoneLabel" text="Seller phone number">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sellerAddressLabel" text="Seller address">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox spacing="9.0">
+                     <children>
+                        <Button disable="true" mnemonicParsing="false" text="Button" visible="false">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="changeEmailButton" mnemonicParsing="false" text="Change email" />
+                        <Button fx:id="changeSellerPhoneButton" mnemonicParsing="false" text="Change Phone Number" />
+                        <Button fx:id="updateSellerAddressButton" mnemonicParsing="false" text="Update Address" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label layoutX="231.0" layoutY="222.0" text="Store Details">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox layoutX="40.0" layoutY="263.0">
+               <children>
+                  <VBox spacing="15.0">
+                     <children>
+                        <Label text="Name :">
+                           <font>
+                              <Font name="Arial" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Phone Number :">
+                           <font>
+                              <Font name="Arial" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Address :">
+                           <font>
+                              <Font name="Arial" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="80.0" text="Description :">
+                           <font>
+                              <Font name="Arial" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox spacing="9.0">
+                     <children>
+                        <Label fx:id="storeNameLabel" text="Store Name">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="storePhoneLabel" text="Store phone number">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="storeAddressLabel" text="Store address">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="storeDescriptionTextarea" editable="false" prefHeight="65.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets top="-5.0" />
+                           </VBox.margin>
+                        </TextArea>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox spacing="9.0">
+                     <children>
+                        <Button fx:id="updateStoreNameButton" mnemonicParsing="false" text="Update Store Name" />
+                        <Button fx:id="changeStorePhoneButton" mnemonicParsing="false" text="Change Phone Number" />
+                        <Button fx:id="updateStoreAddressButton" mnemonicParsing="false" text="Update Address" />
+                        <Button fx:id="updateStoreDescriptionButton" layoutX="10.0" layoutY="74.0" mnemonicParsing="false" text="Update Description" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
