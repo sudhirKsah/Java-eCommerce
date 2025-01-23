@@ -1,16 +1,16 @@
 # CrazyShop
 This is an e-commerce desktop application made using javafx.
 ![home page](<gui pics/home.png>)
-Home
+  Home
 ![signup](<gui pics/signup.png>)
-Signup
+  Signup
 ![login](<gui pics/login.png>)
-Login
+  Login
 ![shop page](<gui pics/shop.png>)
-Shop
+  Shop
 ![cart](<gui pics/cart.png>)
-Cart
+  Cart
 ![store and owner details](<gui pics/store&owner_details.png>)
-Store and Owner Details
+  Store and Owner Details
 ![product details](<gui pics/product_details.png>)
-Product Details
+  Product Details
